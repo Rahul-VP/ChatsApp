@@ -5,7 +5,6 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Start the server
 const server = spawn('node', ['src/index.js'], {
   stdio: 'inherit',
   cwd: __dirname
