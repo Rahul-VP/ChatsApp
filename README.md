@@ -56,28 +56,6 @@ cd fullstack-chat-app
 cd backend
 npm install
 ```
-
-Create a `.env` file in the backend directory:
-```env
-# Server Configuration
-PORT=5001
-NODE_ENV=development
-
-# MongoDB Configuration
-MONGODB_URI=mongodb://localhost:27017/chat-app
-
-# JWT Configuration
-JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
-
-# Cloudinary Configuration
-CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
-CLOUDINARY_API_KEY=your-cloudinary-api-key
-CLOUDINARY_API_SECRET=your-cloudinary-api-secret
-
-# Frontend URL (for CORS)
-FRONTEND_URL=http://localhost:5173
-```
-
 ### 3. Frontend Setup
 
 ```bash
@@ -92,10 +70,6 @@ Start MongoDB and run the seed script to populate with sample users:
 cd backend
 npm run seed
 ```
-
-This will create 16 sample users (8 male, 8 female) with the password "123456".
-
-## Running the Application
 
 ### Development Mode
 
@@ -208,7 +182,3 @@ fullstack-chat-app/
 │   └── vite.config.js
 └── README.md
 ```
-
-
-
-This project is licensed under the MIT License. 
